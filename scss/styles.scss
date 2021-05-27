@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 2560px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 36px;
+    color: #283d50;
+    margin-bottom: 60px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 20px;
+    color: #283d50;
+    margin-bottom: 8px;
+}
+
+// Nav
+
+header {
+    height: 79px;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    background-color: white;
+    box-shadow: 0px 0px 30px rgba(127,137,161,0.3);
+
+    nav {
+        display: flex;
+        padding: 25px 10px;
+
+        .logo-container {
+            display: flex;
+        }
+
+        img {
+            height: 25px;
+            margin: 0 15px 0 0;
+        }
+
+        ul {
+            flex: 1;
+            justify-content: flex-end;
+            display: none;
+            @media (min-width: 800px) {
+                display: flex;
+            }
+
+            a {
+                color: #004289;
+                font-size: 14px;
+                font-weight: 500;
+                padding: 0 15px;
+                margin-left: 15px;
+            }
+        }
+    }
+}
+// Hero
+
+.hero {
+    padding: 150px 0;
+    background: rgba(30, 98, 201, 0.4);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    .flex-row {
+        padding: 0 32px;
+        gap: 32px;
+        flex-direction: column;
+        align-items: center;
+
+        @media (min-width:1000px) {
+            flex-direction: row;
+        }
+    }
+
+    h2 {
+        color:#fff;
+        font-size: 40px;
+        margin-bottom: 32px;
+        text-align: center;
+
+        @media(min-width: 1000px) {
+            text-align: initial;
+            font-size: 48px;
+        }
+    }
+
+    
+
+    img {
+        display: flex;
+        flex: 1;
+        order: 1;
+        width: 50%;
+        border-radius: 20px;
+
+        @media(min-width: 1000px) {
+            order:2
+        }
+    }
+}
+
+// Utility slasses
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.flex-row {
+    display: flex;
+    
+    img {
+        max-width: 600px;
+    }
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 14px 40px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 45px;
+    border: 2px solid transparent;
+    font-weight: 600;
+    transition: 500ms ease all;
+
+    &:hover {
+        background-color: transparent;
+        border-color: #fff;
+    }
+}
+
+.btn-light {
+    background-color: transparent;
+    border-color: #fff;
+
+    &:hover {
+    background-color: #007bff;
+    border-color: transparent;
+    }
+}

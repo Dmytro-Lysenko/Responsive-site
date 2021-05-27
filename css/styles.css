@@ -1,0 +1,154 @@
+/* line 1, ../../../Desktop/Responsive-site/scss/styles.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth; }
+
+/* line 9, ../../../Desktop/Responsive-site/scss/styles.scss */
+body {
+  max-width: 2560px;
+  margin: 0 auto; }
+
+/* line 14, ../../../Desktop/Responsive-site/scss/styles.scss */
+ul {
+  list-style: none; }
+
+/* line 18, ../../../Desktop/Responsive-site/scss/styles.scss */
+a {
+  text-decoration: none; }
+
+/* line 22, ../../../Desktop/Responsive-site/scss/styles.scss */
+h2 {
+  font-weight: 500;
+  font-size: 36px;
+  color: #283d50;
+  margin-bottom: 60px; }
+
+/* line 29, ../../../Desktop/Responsive-site/scss/styles.scss */
+h3 {
+  font-size: 24px;
+  color: #444;
+  margin-bottom: 20px; }
+
+/* line 35, ../../../Desktop/Responsive-site/scss/styles.scss */
+h4 {
+  font-size: 20px;
+  color: #283d50;
+  margin-bottom: 8px; }
+
+/* line 43, ../../../Desktop/Responsive-site/scss/styles.scss */
+header {
+  height: 79px;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  background-color: white;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3); }
+  /* line 51, ../../../Desktop/Responsive-site/scss/styles.scss */
+  header nav {
+    display: flex;
+    padding: 25px 10px; }
+    /* line 55, ../../../Desktop/Responsive-site/scss/styles.scss */
+    header nav .logo-container {
+      display: flex; }
+    /* line 59, ../../../Desktop/Responsive-site/scss/styles.scss */
+    header nav img {
+      height: 25px;
+      margin: 0 15px 0 0; }
+    /* line 64, ../../../Desktop/Responsive-site/scss/styles.scss */
+    header nav ul {
+      flex: 1;
+      justify-content: flex-end;
+      display: none; }
+      @media (min-width: 800px) {
+        /* line 64, ../../../Desktop/Responsive-site/scss/styles.scss */
+        header nav ul {
+          display: flex; } }
+      /* line 72, ../../../Desktop/Responsive-site/scss/styles.scss */
+      header nav ul a {
+        color: #004289;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 0 15px;
+        margin-left: 15px; }
+
+/* line 84, ../../../Desktop/Responsive-site/scss/styles.scss */
+.hero {
+  padding: 150px 0;
+  background: rgba(30, 98, 201, 0.4);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; }
+  /* line 91, ../../../Desktop/Responsive-site/scss/styles.scss */
+  .hero .flex-row {
+    padding: 0 32px;
+    gap: 32px;
+    flex-direction: column;
+    align-items: center; }
+    @media (min-width: 1000px) {
+      /* line 91, ../../../Desktop/Responsive-site/scss/styles.scss */
+      .hero .flex-row {
+        flex-direction: row; } }
+  /* line 102, ../../../Desktop/Responsive-site/scss/styles.scss */
+  .hero h2 {
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 32px;
+    text-align: center; }
+    @media (min-width: 1000px) {
+      /* line 102, ../../../Desktop/Responsive-site/scss/styles.scss */
+      .hero h2 {
+        text-align: initial;
+        font-size: 48px; } }
+  /* line 116, ../../../Desktop/Responsive-site/scss/styles.scss */
+  .hero img {
+    display: flex;
+    flex: 1;
+    order: 1;
+    width: 50%;
+    border-radius: 20px; }
+    @media (min-width: 1000px) {
+      /* line 116, ../../../Desktop/Responsive-site/scss/styles.scss */
+      .hero img {
+        order: 2; } }
+
+/* line 131, ../../../Desktop/Responsive-site/scss/styles.scss */
+.container {
+  max-width: 1140px;
+  margin: 0 auto; }
+
+/* line 136, ../../../Desktop/Responsive-site/scss/styles.scss */
+.flex-row {
+  display: flex; }
+  /* line 139, ../../../Desktop/Responsive-site/scss/styles.scss */
+  .flex-row img {
+    max-width: 600px; }
+
+/* line 144, ../../../Desktop/Responsive-site/scss/styles.scss */
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 14px 40px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 45px;
+  border: 2px solid transparent;
+  font-weight: 600;
+  transition: 500ms ease all; }
+  /* line 155, ../../../Desktop/Responsive-site/scss/styles.scss */
+  .btn:hover {
+    background-color: transparent;
+    border-color: #fff; }
+
+/* line 161, ../../../Desktop/Responsive-site/scss/styles.scss */
+.btn-light {
+  background-color: transparent;
+  border-color: #fff; }
+  /* line 165, ../../../Desktop/Responsive-site/scss/styles.scss */
+  .btn-light:hover {
+    background-color: #007bff;
+    border-color: transparent; }
+
+/*# sourceMappingURL=styles.css.map */
