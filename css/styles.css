@@ -40,15 +40,21 @@ h4 {
 
 /* line 42, ../../../Desktop/Responsive-site/scss/styles.scss */
 .about,
-.services {
+.services,
+.why,
+.photo-gallery,
+.testimonials {
   padding: 50px 20px; }
   @media (min-width: 900px) {
     /* line 42, ../../../Desktop/Responsive-site/scss/styles.scss */
     .about,
-    .services {
+    .services,
+    .why,
+    .photo-gallery,
+    .testimonials {
       padding: 100px 20px; } }
 
-/* line 53, ../../../Desktop/Responsive-site/scss/styles.scss */
+/* line 56, ../../../Desktop/Responsive-site/scss/styles.scss */
 header {
   height: 79px;
   position: fixed;
@@ -56,95 +62,95 @@ header {
   z-index: 3;
   background-color: white;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3); }
-  /* line 61, ../../../Desktop/Responsive-site/scss/styles.scss */
+  /* line 64, ../../../Desktop/Responsive-site/scss/styles.scss */
   header nav {
     display: flex;
     padding: 25px 10px; }
-    /* line 65, ../../../Desktop/Responsive-site/scss/styles.scss */
+    /* line 68, ../../../Desktop/Responsive-site/scss/styles.scss */
     header nav .logo-container {
       display: flex; }
-    /* line 69, ../../../Desktop/Responsive-site/scss/styles.scss */
+    /* line 72, ../../../Desktop/Responsive-site/scss/styles.scss */
     header nav img {
       height: 25px;
       margin: 0 15px 0 0; }
-    /* line 74, ../../../Desktop/Responsive-site/scss/styles.scss */
+    /* line 77, ../../../Desktop/Responsive-site/scss/styles.scss */
     header nav ul {
       flex: 1;
       justify-content: flex-end;
       display: none; }
       @media (min-width: 800px) {
-        /* line 74, ../../../Desktop/Responsive-site/scss/styles.scss */
+        /* line 77, ../../../Desktop/Responsive-site/scss/styles.scss */
         header nav ul {
           display: flex; } }
-      /* line 82, ../../../Desktop/Responsive-site/scss/styles.scss */
+      /* line 85, ../../../Desktop/Responsive-site/scss/styles.scss */
       header nav ul a {
         color: #004289;
         font-size: 14px;
         font-weight: 500;
         padding: 0 15px;
         margin-left: 15px; }
-        /* line 89, ../../../Desktop/Responsive-site/scss/styles.scss */
+        /* line 92, ../../../Desktop/Responsive-site/scss/styles.scss */
         header nav ul a:hover {
           color: #e25d5d; }
 
-/* line 98, ../../../Desktop/Responsive-site/scss/styles.scss */
+/* line 101, ../../../Desktop/Responsive-site/scss/styles.scss */
 .hero {
   padding: 150px 0;
   background: rgba(30, 98, 201, 0.4);
   margin: 0 auto;
   display: flex;
   justify-content: center; }
-  /* line 105, ../../../Desktop/Responsive-site/scss/styles.scss */
+  /* line 108, ../../../Desktop/Responsive-site/scss/styles.scss */
   .hero .flex-row {
     padding: 0 32px;
     gap: 32px;
     flex-direction: column;
     align-items: center; }
     @media (min-width: 1000px) {
-      /* line 105, ../../../Desktop/Responsive-site/scss/styles.scss */
+      /* line 108, ../../../Desktop/Responsive-site/scss/styles.scss */
       .hero .flex-row {
         flex-direction: row; } }
-  /* line 116, ../../../Desktop/Responsive-site/scss/styles.scss */
+  /* line 119, ../../../Desktop/Responsive-site/scss/styles.scss */
   .hero h2 {
     color: #fff;
     font-size: 40px;
     margin-bottom: 32px;
     text-align: center; }
     @media (min-width: 1000px) {
-      /* line 116, ../../../Desktop/Responsive-site/scss/styles.scss */
+      /* line 119, ../../../Desktop/Responsive-site/scss/styles.scss */
       .hero h2 {
         text-align: initial;
         font-size: 48px; } }
-  /* line 128, ../../../Desktop/Responsive-site/scss/styles.scss */
+  /* line 131, ../../../Desktop/Responsive-site/scss/styles.scss */
   .hero .left {
     flex: 1;
     order: 2;
     justify-content: center;
     align-items: center; }
     @media (min-width: 1000px) {
-      /* line 128, ../../../Desktop/Responsive-site/scss/styles.scss */
+      /* line 131, ../../../Desktop/Responsive-site/scss/styles.scss */
       .hero .left {
         order: 1; } }
-  /* line 139, ../../../Desktop/Responsive-site/scss/styles.scss */
+  /* line 142, ../../../Desktop/Responsive-site/scss/styles.scss */
   .hero .buttons {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 15px; }
     @media (min-width: 1000px) {
-      /* line 139, ../../../Desktop/Responsive-site/scss/styles.scss */
+      /* line 142, ../../../Desktop/Responsive-site/scss/styles.scss */
       .hero .buttons {
         flex-direction: row; } }
-    /* line 149, ../../../Desktop/Responsive-site/scss/styles.scss */
+    /* line 152, ../../../Desktop/Responsive-site/scss/styles.scss */
     .hero .buttons .btn {
       text-align: center;
       width: 200px;
       margin-bottom: 16px; }
       @media (min-width: 1000px) {
-        /* line 149, ../../../Desktop/Responsive-site/scss/styles.scss */
+        /* line 152, ../../../Desktop/Responsive-site/scss/styles.scss */
         .hero .buttons .btn {
           margin-right: 16px; } }
-  /* line 160, ../../../Desktop/Responsive-site/scss/styles.scss */
+  /* line 163, ../../../Desktop/Responsive-site/scss/styles.scss */
   .hero img {
     display: flex;
     flex: 1;
@@ -152,53 +158,53 @@ header {
     width: 80%;
     border-radius: 20px; }
     @media (min-width: 1000px) {
-      /* line 160, ../../../Desktop/Responsive-site/scss/styles.scss */
+      /* line 163, ../../../Desktop/Responsive-site/scss/styles.scss */
       .hero img {
         width: 50%;
         order: 2; } }
 
-/* line 177, ../../../Desktop/Responsive-site/scss/styles.scss */
+/* line 180, ../../../Desktop/Responsive-site/scss/styles.scss */
 .about img {
   width: 60%; }
   @media (min-width: 900px) {
-    /* line 177, ../../../Desktop/Responsive-site/scss/styles.scss */
+    /* line 180, ../../../Desktop/Responsive-site/scss/styles.scss */
     .about img {
       width: 100%; } }
 
-/* line 184, ../../../Desktop/Responsive-site/scss/styles.scss */
+/* line 187, ../../../Desktop/Responsive-site/scss/styles.scss */
 .about h2 {
   text-align: center; }
 
-/* line 188, ../../../Desktop/Responsive-site/scss/styles.scss */
+/* line 191, ../../../Desktop/Responsive-site/scss/styles.scss */
 .about p {
   line-height: 1.7; }
 
-/* line 192, ../../../Desktop/Responsive-site/scss/styles.scss */
+/* line 195, ../../../Desktop/Responsive-site/scss/styles.scss */
 .about .flex-row {
   gap: 50px;
   flex-direction: column; }
   @media (min-width: 900px) {
-    /* line 192, ../../../Desktop/Responsive-site/scss/styles.scss */
+    /* line 195, ../../../Desktop/Responsive-site/scss/styles.scss */
     .about .flex-row {
       flex-direction: row; } }
 
-/* line 200, ../../../Desktop/Responsive-site/scss/styles.scss */
+/* line 203, ../../../Desktop/Responsive-site/scss/styles.scss */
 .about .left,
 .about .right {
   flex: 1; }
 
-/* line 206, ../../../Desktop/Responsive-site/scss/styles.scss */
+/* line 209, ../../../Desktop/Responsive-site/scss/styles.scss */
 .about .left .flex-row {
   gap: 0;
   flex-direction: column;
   margin-top: 32px;
   align-items: center; }
   @media (min-width: 500px) {
-    /* line 206, ../../../Desktop/Responsive-site/scss/styles.scss */
+    /* line 209, ../../../Desktop/Responsive-site/scss/styles.scss */
     .about .left .flex-row {
       flex-direction: row; } }
 
-/* line 216, ../../../Desktop/Responsive-site/scss/styles.scss */
+/* line 219, ../../../Desktop/Responsive-site/scss/styles.scss */
 .about .left .info {
   display: flex;
   flex: 1;
@@ -206,16 +212,16 @@ header {
   align-items: center;
   margin-top: 20px; }
   @media (min-width: 500px) {
-    /* line 216, ../../../Desktop/Responsive-site/scss/styles.scss */
+    /* line 219, ../../../Desktop/Responsive-site/scss/styles.scss */
     .about .left .info {
       margin-top: 0;
       align-items: initial; } }
-  /* line 227, ../../../Desktop/Responsive-site/scss/styles.scss */
+  /* line 230, ../../../Desktop/Responsive-site/scss/styles.scss */
   .about .left .info p {
     color: #444;
     font-size: 14px; }
 
-/* line 233, ../../../Desktop/Responsive-site/scss/styles.scss */
+/* line 236, ../../../Desktop/Responsive-site/scss/styles.scss */
 .about .left i {
   display: flex;
   align-items: center;
@@ -228,68 +234,68 @@ header {
   color: #007bff;
   font-size: 24px; }
   @media (min-width: 500px) {
-    /* line 233, ../../../Desktop/Responsive-site/scss/styles.scss */
+    /* line 236, ../../../Desktop/Responsive-site/scss/styles.scss */
     .about .left i {
       margin-right: 16px; } }
-  /* line 248, ../../../Desktop/Responsive-site/scss/styles.scss */
+  /* line 251, ../../../Desktop/Responsive-site/scss/styles.scss */
   .about .left i:hover {
     background-color: #007bff;
     border-color: transparent;
     color: #fff; }
 
-/* line 257, ../../../Desktop/Responsive-site/scss/styles.scss */
+/* line 260, ../../../Desktop/Responsive-site/scss/styles.scss */
 .about-1 {
   text-align: center; }
   @media (min-width: 500px) {
-    /* line 257, ../../../Desktop/Responsive-site/scss/styles.scss */
+    /* line 260, ../../../Desktop/Responsive-site/scss/styles.scss */
     .about-1 {
       text-align: initial; } }
 
-/* line 266, ../../../Desktop/Responsive-site/scss/styles.scss */
+/* line 269, ../../../Desktop/Responsive-site/scss/styles.scss */
 .about-1 .right,
 .about-3 .right {
   display: flex;
   justify-content: center; }
   @media (min-width: 900px) {
-    /* line 266, ../../../Desktop/Responsive-site/scss/styles.scss */
+    /* line 269, ../../../Desktop/Responsive-site/scss/styles.scss */
     .about-1 .right,
     .about-3 .right {
       align-items: start; } }
 
-/* line 276, ../../../Desktop/Responsive-site/scss/styles.scss */
+/* line 279, ../../../Desktop/Responsive-site/scss/styles.scss */
 .about-2 .left {
   order: 2;
   display: flex;
   justify-content: center; }
   @media (min-width: 900px) {
-    /* line 276, ../../../Desktop/Responsive-site/scss/styles.scss */
+    /* line 279, ../../../Desktop/Responsive-site/scss/styles.scss */
     .about-2 .left {
       order: 1;
       align-items: start; } }
 
-/* line 286, ../../../Desktop/Responsive-site/scss/styles.scss */
+/* line 289, ../../../Desktop/Responsive-site/scss/styles.scss */
 .about-2 .right {
   order: 1; }
   @media (min-width: 900px) {
-    /* line 286, ../../../Desktop/Responsive-site/scss/styles.scss */
+    /* line 289, ../../../Desktop/Responsive-site/scss/styles.scss */
     .about-2 .right {
       order: 2; } }
 
-/* line 296, ../../../Desktop/Responsive-site/scss/styles.scss */
+/* line 299, ../../../Desktop/Responsive-site/scss/styles.scss */
 .about-2 p,
 .about-3 p {
   margin-bottom: 20px; }
 
-/* line 303, ../../../Desktop/Responsive-site/scss/styles.scss */
+/* line 306, ../../../Desktop/Responsive-site/scss/styles.scss */
 .services {
   background-color: #ecf5ff; }
-  /* line 306, ../../../Desktop/Responsive-site/scss/styles.scss */
+  /* line 309, ../../../Desktop/Responsive-site/scss/styles.scss */
   .services .container {
     max-width: 900px; }
-  /* line 310, ../../../Desktop/Responsive-site/scss/styles.scss */
+  /* line 313, ../../../Desktop/Responsive-site/scss/styles.scss */
   .services h2 {
     text-align: center; }
-  /* line 314, ../../../Desktop/Responsive-site/scss/styles.scss */
+  /* line 317, ../../../Desktop/Responsive-site/scss/styles.scss */
   .services .grid {
     max-width: 600px;
     margin: 0 auto;
@@ -297,11 +303,11 @@ header {
     gap: 32px;
     row-gap: 50px; }
     @media (min-width: 800px) {
-      /* line 314, ../../../Desktop/Responsive-site/scss/styles.scss */
+      /* line 317, ../../../Desktop/Responsive-site/scss/styles.scss */
       .services .grid {
         grid-template-columns: repeat(2, 1fr);
         max-width: 100%; } }
-  /* line 326, ../../../Desktop/Responsive-site/scss/styles.scss */
+  /* line 329, ../../../Desktop/Responsive-site/scss/styles.scss */
   .services .flex-row {
     cursor: pointer;
     box-shadow: 0 10px 29px rgba(68, 88, 144, 0.1);
@@ -311,44 +317,277 @@ header {
     padding: 30px;
     background-color: #fff;
     transition: 500ms ease all; }
-    /* line 336, ../../../Desktop/Responsive-site/scss/styles.scss */
+    /* line 339, ../../../Desktop/Responsive-site/scss/styles.scss */
     .services .flex-row:hover {
       transform: translateY(-4px); }
-    /* line 340, ../../../Desktop/Responsive-site/scss/styles.scss */
+    /* line 343, ../../../Desktop/Responsive-site/scss/styles.scss */
     .services .flex-row h3 {
       font-size: 18px; }
-    /* line 344, ../../../Desktop/Responsive-site/scss/styles.scss */
+    /* line 347, ../../../Desktop/Responsive-site/scss/styles.scss */
     .services .flex-row p {
       font-size: 14px;
       line-height: 1.7; }
-    /* line 349, ../../../Desktop/Responsive-site/scss/styles.scss */
+    /* line 352, ../../../Desktop/Responsive-site/scss/styles.scss */
     .services .flex-row i {
       font-size: 64px;
       position: absolute;
       left: -10px;
       display: flex;
       align-self: center; }
-    /* line 357, ../../../Desktop/Responsive-site/scss/styles.scss */
+    /* line 360, ../../../Desktop/Responsive-site/scss/styles.scss */
     .services .flex-row .right {
       margin-left: 40px; }
 
-/* line 365, ../../../Desktop/Responsive-site/scss/styles.scss */
+/* line 368, ../../../Desktop/Responsive-site/scss/styles.scss */
+.why {
+  background: #004a99;
+  color: #fff; }
+  /* line 372, ../../../Desktop/Responsive-site/scss/styles.scss */
+  .why h2, .why h3 {
+    color: #fff;
+    text-align: center; }
+  /* line 377, ../../../Desktop/Responsive-site/scss/styles.scss */
+  .why .flex-row {
+    margin-top: 60px;
+    gap: 60px; }
+  /* line 382, ../../../Desktop/Responsive-site/scss/styles.scss */
+  .why .write-up {
+    margin: 0 auto;
+    max-width: 600px;
+    flex-direction: column; }
+    @media (min-width: 700px) {
+      /* line 382, ../../../Desktop/Responsive-site/scss/styles.scss */
+      .why .write-up {
+        max-width: 100%;
+        flex-direction: row; } }
+    /* line 391, ../../../Desktop/Responsive-site/scss/styles.scss */
+    .why .write-up .col {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      cursor: pointer;
+      padding: 40px;
+      border-radius: 12px;
+      background-color: #00458f;
+      text-align: center;
+      transition: 500ms ease all; }
+      /* line 402, ../../../Desktop/Responsive-site/scss/styles.scss */
+      .why .write-up .col:hover {
+        background-color: #003b7a; }
+        /* line 405, ../../../Desktop/Responsive-site/scss/styles.scss */
+        .why .write-up .col:hover span {
+          border-color: #004a99; }
+    /* line 411, ../../../Desktop/Responsive-site/scss/styles.scss */
+    .why .write-up span {
+      max-width: 100%;
+      margin-top: auto;
+      padding-bottom: 4px;
+      border-bottom: 2px solid transparent;
+      margin: 0 auto; }
+    /* line 419, ../../../Desktop/Responsive-site/scss/styles.scss */
+    .why .write-up i {
+      font-size: 50px; }
+    /* line 423, ../../../Desktop/Responsive-site/scss/styles.scss */
+    .why .write-up h3 {
+      margin: 16px 0; }
+    /* line 427, ../../../Desktop/Responsive-site/scss/styles.scss */
+    .why .write-up p {
+      font-size: 14px;
+      margin-bottom: 32px; }
+  /* line 433, ../../../Desktop/Responsive-site/scss/styles.scss */
+  .why .analytics {
+    flex-direction: column;
+    margin-top: 90px;
+    justify-content: space-evenly; }
+    @media (min-width: 700px) {
+      /* line 433, ../../../Desktop/Responsive-site/scss/styles.scss */
+      .why .analytics {
+        flex-direction: row; } }
+    /* line 441, ../../../Desktop/Responsive-site/scss/styles.scss */
+    .why .analytics span {
+      display: block;
+      text-align: center; }
+    /* line 446, ../../../Desktop/Responsive-site/scss/styles.scss */
+    .why .analytics .number {
+      font-size: 50px;
+      font-weight: 600;
+      margin-bottom: 10px; }
+    /* line 452, ../../../Desktop/Responsive-site/scss/styles.scss */
+    .why .analytics .title {
+      font-size: 14px; }
+
+/* line 462, ../../../Desktop/Responsive-site/scss/styles.scss */
+.photo-gallery h2 {
+  text-align: center; }
+
+/* line 466, ../../../Desktop/Responsive-site/scss/styles.scss */
+.photo-gallery .grid {
+  grid-template-columns: 1fr;
+  grid-auto-rows: 125px;
+  gap: 16px; }
+  @media (min-width: 600px) {
+    /* line 466, ../../../Desktop/Responsive-site/scss/styles.scss */
+    .photo-gallery .grid {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 900px) {
+    /* line 466, ../../../Desktop/Responsive-site/scss/styles.scss */
+    .photo-gallery .grid {
+      grid-template-columns: repeat(3, 1fr); } }
+
+/* line 478, ../../../Desktop/Responsive-site/scss/styles.scss */
+.photo-gallery .col {
+  position: relative; }
+  /* line 481, ../../../Desktop/Responsive-site/scss/styles.scss */
+  .photo-gallery .col img {
+    position: relative;
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px; }
+  /* line 490, ../../../Desktop/Responsive-site/scss/styles.scss */
+  .photo-gallery .col .bg {
+    border-radius: 12px;
+    transition: 500ms ease all;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+  /* line 499, ../../../Desktop/Responsive-site/scss/styles.scss */
+  .photo-gallery .col .content {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms ease all;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+    /* line 512, ../../../Desktop/Responsive-site/scss/styles.scss */
+    .photo-gallery .col .content p:nth-child(1) {
+      font-weight: 600;
+      font-size: 24px;
+      margin-bottom: 4px; }
+    /* line 518, ../../../Desktop/Responsive-site/scss/styles.scss */
+    .photo-gallery .col .content p:nth-child(2) {
+      margin-bottom: 4px; }
+    /* line 522, ../../../Desktop/Responsive-site/scss/styles.scss */
+    .photo-gallery .col .content i {
+      cursor: pointer;
+      font-size: 18px;
+      padding: 10px;
+      border-radius: 50%;
+      background-color: #004289; }
+  /* line 531, ../../../Desktop/Responsive-site/scss/styles.scss */
+  .photo-gallery .col:hover .bg {
+    background-color: rgba(0, 59, 122, 0.7); }
+  /* line 534, ../../../Desktop/Responsive-site/scss/styles.scss */
+  .photo-gallery .col:hover .content {
+    opacity: 1; }
+
+/* line 540, ../../../Desktop/Responsive-site/scss/styles.scss */
+.photo-gallery .photo-1 {
+  grid-row: span 2; }
+  @media (min-width: 600px) {
+    /* line 540, ../../../Desktop/Responsive-site/scss/styles.scss */
+    .photo-gallery .photo-1 {
+      grid-row: span 3; } }
+
+/* line 547, ../../../Desktop/Responsive-site/scss/styles.scss */
+.photo-gallery .photo-2,
+.photo-gallery .photo-6,
+.photo-gallery .photo-7,
+.photo-gallery .photo-8,
+.photo-gallery .photo-9 {
+  grid-row: span 2; }
+
+/* line 555, ../../../Desktop/Responsive-site/scss/styles.scss */
+.photo-gallery .photo-3,
+.photo-gallery .photo-4,
+.photo-gallery .photo-5 {
+  grid-row: span 2; }
+  @media (min-width: 600px) {
+    /* line 555, ../../../Desktop/Responsive-site/scss/styles.scss */
+    .photo-gallery .photo-3,
+    .photo-gallery .photo-4,
+    .photo-gallery .photo-5 {
+      grid-row: span 5; } }
+
+/* line 567, ../../../Desktop/Responsive-site/scss/styles.scss */
+.testimonials {
+  background-color: #ecf5ff;
+  box-shadow: inset 0 0 12px 0 rgba(0, 0, 0, 0.1); }
+  /* line 571, ../../../Desktop/Responsive-site/scss/styles.scss */
+  .testimonials h2 {
+    text-align: center; }
+  /* line 575, ../../../Desktop/Responsive-site/scss/styles.scss */
+  .testimonials .owl-carousel {
+    max-width: 800px;
+    margin: 0 auto; }
+  /* line 580, ../../../Desktop/Responsive-site/scss/styles.scss */
+  .testimonials img {
+    width: 120px !important;
+    height: 120px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    margin: 0 0 20px 0; }
+    @media (min-width: 600px) {
+      /* line 580, ../../../Desktop/Responsive-site/scss/styles.scss */
+      .testimonials img {
+        margin: 0 20px 0 0; } }
+  /* line 591, ../../../Desktop/Responsive-site/scss/styles.scss */
+  .testimonials .flex-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+    @media (min-width: 600px) {
+      /* line 591, ../../../Desktop/Responsive-site/scss/styles.scss */
+      .testimonials .flex-row {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: start; } }
+    /* line 601, ../../../Desktop/Responsive-site/scss/styles.scss */
+    .testimonials .flex-row h2 {
+      font-size: 20px;
+      color: #111;
+      margin: 0 0 8px 0; }
+      @media (min-width: 600px) {
+        /* line 601, ../../../Desktop/Responsive-site/scss/styles.scss */
+        .testimonials .flex-row h2 {
+          text-align: start; } }
+    /* line 610, ../../../Desktop/Responsive-site/scss/styles.scss */
+    .testimonials .flex-row h4 {
+      font-weight: 300;
+      margin: 0 0 8px 0;
+      color: #999;
+      font-size: 14px; }
+    /* line 617, ../../../Desktop/Responsive-site/scss/styles.scss */
+    .testimonials .flex-row p {
+      font-family: sans-serif;
+      font-weight: 400;
+      font-style: italic;
+      color: #444; }
+
+/* line 628, ../../../Desktop/Responsive-site/scss/styles.scss */
 .container {
   max-width: 1140px;
   margin: 0 auto; }
 
-/* line 370, ../../../Desktop/Responsive-site/scss/styles.scss */
+/* line 633, ../../../Desktop/Responsive-site/scss/styles.scss */
 .flex-row {
   display: flex; }
-  /* line 373, ../../../Desktop/Responsive-site/scss/styles.scss */
+  /* line 636, ../../../Desktop/Responsive-site/scss/styles.scss */
   .flex-row img {
     max-width: 600px; }
 
-/* line 378, ../../../Desktop/Responsive-site/scss/styles.scss */
+/* line 641, ../../../Desktop/Responsive-site/scss/styles.scss */
 .grid {
   display: grid; }
 
-/* line 382, ../../../Desktop/Responsive-site/scss/styles.scss */
+/* line 645, ../../../Desktop/Responsive-site/scss/styles.scss */
 .btn {
   cursor: pointer;
   display: inline-block;
@@ -359,41 +598,41 @@ header {
   border: 2px solid transparent;
   font-weight: 600;
   transition: 500ms ease all; }
-  /* line 393, ../../../Desktop/Responsive-site/scss/styles.scss */
+  /* line 656, ../../../Desktop/Responsive-site/scss/styles.scss */
   .btn:hover {
     background-color: transparent;
     border-color: #fff; }
 
-/* line 399, ../../../Desktop/Responsive-site/scss/styles.scss */
+/* line 662, ../../../Desktop/Responsive-site/scss/styles.scss */
 .btn-light {
   background-color: transparent;
   border-color: #fff; }
-  /* line 403, ../../../Desktop/Responsive-site/scss/styles.scss */
+  /* line 666, ../../../Desktop/Responsive-site/scss/styles.scss */
   .btn-light:hover {
     background-color: #007bff;
     border-color: transparent; }
 
-/* line 409, ../../../Desktop/Responsive-site/scss/styles.scss */
+/* line 672, ../../../Desktop/Responsive-site/scss/styles.scss */
 .pink-text {
   color: #ff689b; }
 
-/* line 413, ../../../Desktop/Responsive-site/scss/styles.scss */
+/* line 676, ../../../Desktop/Responsive-site/scss/styles.scss */
 .yellow-text {
   color: #e9bf06; }
 
-/* line 417, ../../../Desktop/Responsive-site/scss/styles.scss */
+/* line 680, ../../../Desktop/Responsive-site/scss/styles.scss */
 .teal-text {
   color: #3fcdc7; }
 
-/* line 421, ../../../Desktop/Responsive-site/scss/styles.scss */
+/* line 684, ../../../Desktop/Responsive-site/scss/styles.scss */
 .green-text {
   color: #41cf2e; }
 
-/* line 425, ../../../Desktop/Responsive-site/scss/styles.scss */
+/* line 688, ../../../Desktop/Responsive-site/scss/styles.scss */
 .lineGreen-text {
   color: #d6ff22; }
 
-/* line 429, ../../../Desktop/Responsive-site/scss/styles.scss */
+/* line 692, ../../../Desktop/Responsive-site/scss/styles.scss */
 .blue-text {
   color: #4680ff; }
 
