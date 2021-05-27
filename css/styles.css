@@ -38,7 +38,15 @@ h4 {
   color: #283d50;
   margin-bottom: 8px; }
 
-/* line 43, ../../../Desktop/Responsive-site/scss/styles.scss */
+/* line 42, ../../../Desktop/Responsive-site/scss/styles.scss */
+.about {
+  padding: 50px 20px; }
+  @media (min-width: 900px) {
+    /* line 42, ../../../Desktop/Responsive-site/scss/styles.scss */
+    .about {
+      padding: 100px 20px; } }
+
+/* line 52, ../../../Desktop/Responsive-site/scss/styles.scss */
 header {
   height: 79px;
   position: fixed;
@@ -46,87 +54,243 @@ header {
   z-index: 3;
   background-color: white;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3); }
-  /* line 51, ../../../Desktop/Responsive-site/scss/styles.scss */
+  /* line 60, ../../../Desktop/Responsive-site/scss/styles.scss */
   header nav {
     display: flex;
     padding: 25px 10px; }
-    /* line 55, ../../../Desktop/Responsive-site/scss/styles.scss */
+    /* line 64, ../../../Desktop/Responsive-site/scss/styles.scss */
     header nav .logo-container {
       display: flex; }
-    /* line 59, ../../../Desktop/Responsive-site/scss/styles.scss */
+    /* line 68, ../../../Desktop/Responsive-site/scss/styles.scss */
     header nav img {
       height: 25px;
       margin: 0 15px 0 0; }
-    /* line 64, ../../../Desktop/Responsive-site/scss/styles.scss */
+    /* line 73, ../../../Desktop/Responsive-site/scss/styles.scss */
     header nav ul {
       flex: 1;
       justify-content: flex-end;
       display: none; }
       @media (min-width: 800px) {
-        /* line 64, ../../../Desktop/Responsive-site/scss/styles.scss */
+        /* line 73, ../../../Desktop/Responsive-site/scss/styles.scss */
         header nav ul {
           display: flex; } }
-      /* line 72, ../../../Desktop/Responsive-site/scss/styles.scss */
+      /* line 81, ../../../Desktop/Responsive-site/scss/styles.scss */
       header nav ul a {
         color: #004289;
         font-size: 14px;
         font-weight: 500;
         padding: 0 15px;
         margin-left: 15px; }
+        /* line 88, ../../../Desktop/Responsive-site/scss/styles.scss */
+        header nav ul a:hover {
+          color: #e25d5d; }
 
-/* line 84, ../../../Desktop/Responsive-site/scss/styles.scss */
+/* line 97, ../../../Desktop/Responsive-site/scss/styles.scss */
 .hero {
   padding: 150px 0;
   background: rgba(30, 98, 201, 0.4);
   margin: 0 auto;
   display: flex;
   justify-content: center; }
-  /* line 91, ../../../Desktop/Responsive-site/scss/styles.scss */
+  /* line 104, ../../../Desktop/Responsive-site/scss/styles.scss */
   .hero .flex-row {
     padding: 0 32px;
     gap: 32px;
     flex-direction: column;
     align-items: center; }
     @media (min-width: 1000px) {
-      /* line 91, ../../../Desktop/Responsive-site/scss/styles.scss */
+      /* line 104, ../../../Desktop/Responsive-site/scss/styles.scss */
       .hero .flex-row {
         flex-direction: row; } }
-  /* line 102, ../../../Desktop/Responsive-site/scss/styles.scss */
+  /* line 115, ../../../Desktop/Responsive-site/scss/styles.scss */
   .hero h2 {
     color: #fff;
     font-size: 40px;
     margin-bottom: 32px;
     text-align: center; }
     @media (min-width: 1000px) {
-      /* line 102, ../../../Desktop/Responsive-site/scss/styles.scss */
+      /* line 115, ../../../Desktop/Responsive-site/scss/styles.scss */
       .hero h2 {
         text-align: initial;
         font-size: 48px; } }
-  /* line 116, ../../../Desktop/Responsive-site/scss/styles.scss */
+  /* line 127, ../../../Desktop/Responsive-site/scss/styles.scss */
+  .hero .left {
+    flex: 1;
+    order: 2;
+    justify-content: center;
+    align-items: center; }
+    @media (min-width: 1000px) {
+      /* line 127, ../../../Desktop/Responsive-site/scss/styles.scss */
+      .hero .left {
+        order: 1; } }
+  /* line 138, ../../../Desktop/Responsive-site/scss/styles.scss */
+  .hero .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px; }
+    @media (min-width: 1000px) {
+      /* line 138, ../../../Desktop/Responsive-site/scss/styles.scss */
+      .hero .buttons {
+        flex-direction: row; } }
+    /* line 148, ../../../Desktop/Responsive-site/scss/styles.scss */
+    .hero .buttons .btn {
+      text-align: center;
+      width: 200px;
+      margin-bottom: 16px; }
+      @media (min-width: 1000px) {
+        /* line 148, ../../../Desktop/Responsive-site/scss/styles.scss */
+        .hero .buttons .btn {
+          margin-right: 16px; } }
+  /* line 159, ../../../Desktop/Responsive-site/scss/styles.scss */
   .hero img {
     display: flex;
     flex: 1;
     order: 1;
-    width: 50%;
+    width: 80%;
     border-radius: 20px; }
     @media (min-width: 1000px) {
-      /* line 116, ../../../Desktop/Responsive-site/scss/styles.scss */
+      /* line 159, ../../../Desktop/Responsive-site/scss/styles.scss */
       .hero img {
+        width: 50%;
         order: 2; } }
 
-/* line 131, ../../../Desktop/Responsive-site/scss/styles.scss */
+/* line 176, ../../../Desktop/Responsive-site/scss/styles.scss */
+.about img {
+  width: 60%; }
+  @media (min-width: 900px) {
+    /* line 176, ../../../Desktop/Responsive-site/scss/styles.scss */
+    .about img {
+      width: 100%; } }
+
+/* line 183, ../../../Desktop/Responsive-site/scss/styles.scss */
+.about h2 {
+  text-align: center; }
+
+/* line 187, ../../../Desktop/Responsive-site/scss/styles.scss */
+.about p {
+  line-height: 1.7; }
+
+/* line 191, ../../../Desktop/Responsive-site/scss/styles.scss */
+.about .flex-row {
+  gap: 50px;
+  flex-direction: column; }
+  @media (min-width: 900px) {
+    /* line 191, ../../../Desktop/Responsive-site/scss/styles.scss */
+    .about .flex-row {
+      flex-direction: row; } }
+
+/* line 199, ../../../Desktop/Responsive-site/scss/styles.scss */
+.about .left,
+.about .right {
+  flex: 1; }
+
+/* line 205, ../../../Desktop/Responsive-site/scss/styles.scss */
+.about .left .flex-row {
+  gap: 0;
+  flex-direction: column;
+  margin-top: 32px;
+  align-items: center; }
+  @media (min-width: 500px) {
+    /* line 205, ../../../Desktop/Responsive-site/scss/styles.scss */
+    .about .left .flex-row {
+      flex-direction: row; } }
+
+/* line 215, ../../../Desktop/Responsive-site/scss/styles.scss */
+.about .left .info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px; }
+  @media (min-width: 500px) {
+    /* line 215, ../../../Desktop/Responsive-site/scss/styles.scss */
+    .about .left .info {
+      margin-top: 0;
+      align-items: initial; } }
+  /* line 226, ../../../Desktop/Responsive-site/scss/styles.scss */
+  .about .left .info p {
+    color: #444;
+    font-size: 14px; }
+
+/* line 232, ../../../Desktop/Responsive-site/scss/styles.scss */
+.about .left i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  transition: 500ms ease all;
+  color: #007bff;
+  font-size: 24px; }
+  @media (min-width: 500px) {
+    /* line 232, ../../../Desktop/Responsive-site/scss/styles.scss */
+    .about .left i {
+      margin-right: 16px; } }
+  /* line 247, ../../../Desktop/Responsive-site/scss/styles.scss */
+  .about .left i:hover {
+    background-color: #007bff;
+    border-color: transparent;
+    color: #fff; }
+
+/* line 256, ../../../Desktop/Responsive-site/scss/styles.scss */
+.about-1 {
+  text-align: center; }
+  @media (min-width: 500px) {
+    /* line 256, ../../../Desktop/Responsive-site/scss/styles.scss */
+    .about-1 {
+      text-align: initial; } }
+
+/* line 265, ../../../Desktop/Responsive-site/scss/styles.scss */
+.about-1 .right,
+.about-3 .right {
+  display: flex;
+  justify-content: center; }
+  @media (min-width: 900px) {
+    /* line 265, ../../../Desktop/Responsive-site/scss/styles.scss */
+    .about-1 .right,
+    .about-3 .right {
+      align-items: start; } }
+
+/* line 275, ../../../Desktop/Responsive-site/scss/styles.scss */
+.about-2 .left {
+  order: 2;
+  display: flex;
+  justify-content: center; }
+  @media (min-width: 900px) {
+    /* line 275, ../../../Desktop/Responsive-site/scss/styles.scss */
+    .about-2 .left {
+      order: 1;
+      align-items: start; } }
+
+/* line 285, ../../../Desktop/Responsive-site/scss/styles.scss */
+.about-2 .right {
+  order: 1; }
+  @media (min-width: 900px) {
+    /* line 285, ../../../Desktop/Responsive-site/scss/styles.scss */
+    .about-2 .right {
+      order: 2; } }
+
+/* line 295, ../../../Desktop/Responsive-site/scss/styles.scss */
+.about-2 p,
+.about-3 p {
+  margin-bottom: 20px; }
+
+/* line 302, ../../../Desktop/Responsive-site/scss/styles.scss */
 .container {
   max-width: 1140px;
   margin: 0 auto; }
 
-/* line 136, ../../../Desktop/Responsive-site/scss/styles.scss */
+/* line 307, ../../../Desktop/Responsive-site/scss/styles.scss */
 .flex-row {
   display: flex; }
-  /* line 139, ../../../Desktop/Responsive-site/scss/styles.scss */
+  /* line 310, ../../../Desktop/Responsive-site/scss/styles.scss */
   .flex-row img {
     max-width: 600px; }
 
-/* line 144, ../../../Desktop/Responsive-site/scss/styles.scss */
+/* line 315, ../../../Desktop/Responsive-site/scss/styles.scss */
 .btn {
   cursor: pointer;
   display: inline-block;
@@ -137,16 +301,16 @@ header {
   border: 2px solid transparent;
   font-weight: 600;
   transition: 500ms ease all; }
-  /* line 155, ../../../Desktop/Responsive-site/scss/styles.scss */
+  /* line 326, ../../../Desktop/Responsive-site/scss/styles.scss */
   .btn:hover {
     background-color: transparent;
     border-color: #fff; }
 
-/* line 161, ../../../Desktop/Responsive-site/scss/styles.scss */
+/* line 332, ../../../Desktop/Responsive-site/scss/styles.scss */
 .btn-light {
   background-color: transparent;
   border-color: #fff; }
-  /* line 165, ../../../Desktop/Responsive-site/scss/styles.scss */
+  /* line 336, ../../../Desktop/Responsive-site/scss/styles.scss */
   .btn-light:hover {
     background-color: #007bff;
     border-color: transparent; }
