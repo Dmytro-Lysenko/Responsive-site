@@ -39,7 +39,8 @@ h4 {
 }
 
 //Multiple section styles
-.about {
+.about,
+.services {
     padding: 50px 20px;
     @media(min-width: 900px) {
         padding: 100px 20px;
@@ -297,6 +298,68 @@ header {
     }
 }
 
+// Services 
+
+.services {
+    background-color: #ecf5ff;
+
+    .container {
+        max-width: 900px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .grid {
+        max-width: 600px;
+        margin: 0 auto;
+        grid-template-columns: 1r;
+        gap: 32px;
+        row-gap: 50px;
+        @media(min-width: 800px) {
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 100%;
+        }
+    }
+
+    .flex-row {
+        cursor: pointer;
+        box-shadow: 0 10px 29px rgba(68,88,144,0.1);
+        border-radius: 12px;
+        position: relative;
+        overflow: hidden;
+        padding: 30px;
+        background-color: #fff;
+        transition: 500ms ease all;
+
+        &:hover {
+            transform: translateY(-4px)
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+        
+        p{
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        i {
+            font-size: 64px;
+            position: absolute;
+            left: -10px;
+            display: flex;
+            align-self: center;
+        }
+
+        .right {
+            margin-left: 40px;
+        }
+    }
+}
+
 // Utility slasses
 
 .container {
@@ -310,6 +373,10 @@ header {
     img {
         max-width: 600px;
     }
+}
+
+.grid {
+    display: grid;
 }
 
 .btn {
@@ -337,4 +404,28 @@ header {
     background-color: #007bff;
     border-color: transparent;
     }
+}
+
+.pink-text {
+    color: #ff689b
+}
+
+.yellow-text {
+    color: #e9bf06
+}
+
+.teal-text {
+    color:#3fcdc7
+}
+
+.green-text {
+    color: #41cf2e
+}
+
+.lineGreen-text {
+    color: #d6ff22
+}
+
+.blue-text {
+    color: #4680ff
 }
