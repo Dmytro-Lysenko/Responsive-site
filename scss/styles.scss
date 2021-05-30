@@ -46,12 +46,54 @@ h4 {
 .testimonials,
 .team,
 .clients,
+.contact-us,
 footer {
     padding: 50px 20px;
     @media(min-width: 900px) {
         padding: 100px 20px;
     }
 
+}
+
+// Modal
+
+.modal-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;top: 0;
+    z-index: 4;
+    background-color: rgba(0,0,0,0.5);
+
+    .modal {
+        text-align: center;
+        padding: 50px;
+        border-radius: 8px;
+        background-color: #fff;
+
+        img {
+            width: 200px;
+            height: auto;
+            margin-bottom: 16px;
+        }
+
+        p:nth-child(2) {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .btn {
+            margin-top: 24px;
+
+            &:hover {
+                border-color: #007bff;
+                color: #007bff;
+            }
+        }
+    }
 }
 
 // Nav
@@ -823,11 +865,75 @@ footer {
     }
 }
 
+//Contact Us
+.contact-us {
+    h2,
+    p {
+        text-align: center;
+    }
+
+    p {
+        margin-bottom: 16px;
+    }
+
+    input,
+    button {
+        display: block;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ced4da;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    input {
+        margin-bottom: 16px;
+    }
+
+    textarea {
+        height: 100%;
+        resize: none;
+    }
+
+    form {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .flex-row {
+        flex-direction: column;
+        @media(min-width: 500px) {
+            flex-direction: row;
+            gap: 32px;
+        }
+    }
+
+    .btn {
+        margin-top: 16px;
+        font-weight: 400;
+
+        &:hover {
+            color: #007bff;
+            border-color: #007bff;
+        }
+    }
+}
+
 // Utility slasses
 
 .container {
     max-width: 1140px;
     margin: 0 auto;
+}
+
+.display-none {
+    display: none;
 }
 
 .flex-row {

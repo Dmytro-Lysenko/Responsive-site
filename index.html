@@ -10,9 +10,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
     <title>Responsive site</title>
 </head>
 <body>
+    <!-- Contact Modal -->
+    <div class="modal-wrap display-none">
+        <div class="modal">
+            <img src="img/contact-thank-you.svg" alt="">
+            <p>Thank you for your submission!</p>
+            <p>We will be back in touch in 24-48 hours</p>
+            <button class="btn modal-close">Close</button>
+        </div>
+    </div>
     <!-- Header -->
     <header>
         <nav class="container">
@@ -463,15 +474,30 @@
             </div>
         </div>
     </section>
+    <!-- Contact Us -->
+    <section class="contact-us">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Want to work with us on a future project? Fill out the form below to <form class="contact-form">
+                <div class="flex-row">
+                    <input type="search"  class="full-name" placeholder="Your Name">
+                    <input type="search"  class="email-address" placeholder="Your Email">
+                </div>
+                <input type="search" class="subject" placeholder="Subject">
+                <textarea class="message" placeholder="Message"></textarea>
+                <button class="btn submit-form" type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
      <!-- Footer -->
      <footer>
          <div class="container">
              <ul class="flex-row">
-                <li><a href="#">Головна</a></li>
-                <li><a href="#">Про нас</a></li>
-                <li><a href="#">Послуги</a></li>
-                <li><a href="#">Команда</a></li>
-                <li><a href="#">Контакти</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Contact us</a></li>
              </ul>
              <ul class="flex-row">
                  <li>
@@ -493,6 +519,7 @@
              <p>&copy; 2021 Dmytro Lysenko</p>
          </div>
      </footer>
+     <script src="firebase/firebase.js"></script>
     <script src="owl-carousel/jquery.min.js"></script>
     <script src="owl-carousel/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
