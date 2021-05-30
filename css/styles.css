@@ -38,7 +38,27 @@ h4 {
   color: #283d50;
   margin-bottom: 8px; }
 
-/* line 42, ../../Responsive-site/scss/styles.scss */
+@keyframes slide-in {
+  0% {
+    transform: translateX(300px); }
+  100% {
+    transform: translateX(0); } }
+
+@keyframes slide-out {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(300px); } }
+
+/* line 63, ../../Responsive-site/scss/styles.scss */
+.slide-in {
+  animation: slide-in 500ms ease; }
+
+/* line 67, ../../Responsive-site/scss/styles.scss */
+.slide-out {
+  animation: slide-out 500ms ease; }
+
+/* line 72, ../../Responsive-site/scss/styles.scss */
 .about,
 .services,
 .why,
@@ -50,7 +70,7 @@ h4 {
 footer {
   padding: 50px 20px; }
   @media (min-width: 900px) {
-    /* line 42, ../../Responsive-site/scss/styles.scss */
+    /* line 72, ../../Responsive-site/scss/styles.scss */
     .about,
     .services,
     .why,
@@ -62,7 +82,7 @@ footer {
     footer {
       padding: 100px 20px; } }
 
-/* line 60, ../../Responsive-site/scss/styles.scss */
+/* line 90, ../../Responsive-site/scss/styles.scss */
 .modal-wrap {
   display: flex;
   justify-content: center;
@@ -74,30 +94,61 @@ footer {
   top: 0;
   z-index: 4;
   background-color: rgba(0, 0, 0, 0.5); }
-  /* line 71, ../../Responsive-site/scss/styles.scss */
+  /* line 101, ../../Responsive-site/scss/styles.scss */
   .modal-wrap .modal {
     text-align: center;
     padding: 50px;
     border-radius: 8px;
     background-color: #fff; }
-    /* line 77, ../../Responsive-site/scss/styles.scss */
+    /* line 107, ../../Responsive-site/scss/styles.scss */
     .modal-wrap .modal img {
       width: 200px;
       height: auto;
       margin-bottom: 16px; }
-    /* line 83, ../../Responsive-site/scss/styles.scss */
+    /* line 113, ../../Responsive-site/scss/styles.scss */
     .modal-wrap .modal p:nth-child(2) {
       font-size: 24px;
       margin-bottom: 8px; }
-    /* line 88, ../../Responsive-site/scss/styles.scss */
+    /* line 118, ../../Responsive-site/scss/styles.scss */
     .modal-wrap .modal .btn {
       margin-top: 24px; }
-      /* line 91, ../../Responsive-site/scss/styles.scss */
+      /* line 121, ../../Responsive-site/scss/styles.scss */
       .modal-wrap .modal .btn:hover {
         border-color: #007bff;
         color: #007bff; }
 
-/* line 101, ../../Responsive-site/scss/styles.scss */
+/* line 131, ../../Responsive-site/scss/styles.scss */
+.mobile-bg {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  right: 0; }
+  /* line 139, ../../Responsive-site/scss/styles.scss */
+  .mobile-bg i {
+    position: absolute;
+    color: #fff;
+    left: 20px;
+    top: 20px;
+    font-size: 24px; }
+  /* line 147, ../../Responsive-site/scss/styles.scss */
+  .mobile-bg ul {
+    position: absolute;
+    padding: 15px;
+    width: 300px;
+    right: 0;
+    background-color: rgba(0, 123, 255, 0.7);
+    height: 100%; }
+    /* line 155, ../../Responsive-site/scss/styles.scss */
+    .mobile-bg ul a {
+      color: #fff;
+      font-weight: 500; }
+    /* line 160, ../../Responsive-site/scss/styles.scss */
+    .mobile-bg ul li {
+      padding: 10px 0; }
+
+/* line 168, ../../Responsive-site/scss/styles.scss */
 header {
   height: 79px;
   position: fixed;
@@ -105,95 +156,105 @@ header {
   z-index: 3;
   background-color: white;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3); }
-  /* line 109, ../../Responsive-site/scss/styles.scss */
+  /* line 176, ../../Responsive-site/scss/styles.scss */
   header nav {
     display: flex;
     padding: 25px 10px; }
-    /* line 113, ../../Responsive-site/scss/styles.scss */
+    /* line 180, ../../Responsive-site/scss/styles.scss */
     header nav .logo-container {
       display: flex; }
-    /* line 117, ../../Responsive-site/scss/styles.scss */
+    /* line 184, ../../Responsive-site/scss/styles.scss */
     header nav img {
       height: 25px;
       margin: 0 15px 0 0; }
-    /* line 122, ../../Responsive-site/scss/styles.scss */
+    /* line 189, ../../Responsive-site/scss/styles.scss */
+    header nav i {
+      z-index: 6;
+      font-size: 24px;
+      flex: 1;
+      text-align: right; }
+      @media (min-width: 800px) {
+        /* line 189, ../../Responsive-site/scss/styles.scss */
+        header nav i {
+          display: none !important; } }
+    /* line 199, ../../Responsive-site/scss/styles.scss */
     header nav ul {
       flex: 1;
       justify-content: flex-end;
       display: none; }
       @media (min-width: 800px) {
-        /* line 122, ../../Responsive-site/scss/styles.scss */
+        /* line 199, ../../Responsive-site/scss/styles.scss */
         header nav ul {
           display: flex; } }
-      /* line 130, ../../Responsive-site/scss/styles.scss */
+      /* line 207, ../../Responsive-site/scss/styles.scss */
       header nav ul a {
         color: #004289;
         font-size: 14px;
         font-weight: 500;
         padding: 0 15px;
         margin-left: 15px; }
-        /* line 137, ../../Responsive-site/scss/styles.scss */
+        /* line 214, ../../Responsive-site/scss/styles.scss */
         header nav ul a:hover {
           color: #e25d5d; }
 
-/* line 146, ../../Responsive-site/scss/styles.scss */
+/* line 223, ../../Responsive-site/scss/styles.scss */
 .hero {
   padding: 150px 0;
   margin: 0 auto;
   background: rgba(25, 108, 141, 0.3);
   display: flex;
   justify-content: center; }
-  /* line 153, ../../Responsive-site/scss/styles.scss */
+  /* line 230, ../../Responsive-site/scss/styles.scss */
   .hero .flex-row {
     padding: 0 32px;
     gap: 32px;
     flex-direction: column;
     align-items: center; }
     @media (min-width: 1000px) {
-      /* line 153, ../../Responsive-site/scss/styles.scss */
+      /* line 230, ../../Responsive-site/scss/styles.scss */
       .hero .flex-row {
         flex-direction: row; } }
-  /* line 164, ../../Responsive-site/scss/styles.scss */
+  /* line 241, ../../Responsive-site/scss/styles.scss */
   .hero h2 {
     color: #fff;
     font-size: 40px;
     margin-bottom: 32px;
     text-align: center; }
     @media (min-width: 1000px) {
-      /* line 164, ../../Responsive-site/scss/styles.scss */
+      /* line 241, ../../Responsive-site/scss/styles.scss */
       .hero h2 {
         text-align: initial;
         font-size: 48px; } }
-  /* line 176, ../../Responsive-site/scss/styles.scss */
+  /* line 253, ../../Responsive-site/scss/styles.scss */
   .hero .left {
     flex: 1;
     order: 2;
     justify-content: center;
     align-items: center; }
     @media (min-width: 1000px) {
-      /* line 176, ../../Responsive-site/scss/styles.scss */
+      /* line 253, ../../Responsive-site/scss/styles.scss */
       .hero .left {
         order: 1; } }
-  /* line 187, ../../Responsive-site/scss/styles.scss */
+  /* line 264, ../../Responsive-site/scss/styles.scss */
   .hero .buttons {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 15px; }
     @media (min-width: 1000px) {
-      /* line 187, ../../Responsive-site/scss/styles.scss */
+      /* line 264, ../../Responsive-site/scss/styles.scss */
       .hero .buttons {
         flex-direction: row; } }
-    /* line 197, ../../Responsive-site/scss/styles.scss */
+    /* line 274, ../../Responsive-site/scss/styles.scss */
     .hero .buttons .btn {
       text-align: center;
       width: 200px;
       margin-bottom: 16px; }
       @media (min-width: 1000px) {
-        /* line 197, ../../Responsive-site/scss/styles.scss */
+        /* line 274, ../../Responsive-site/scss/styles.scss */
         .hero .buttons .btn {
           margin-right: 16px; } }
-  /* line 208, ../../Responsive-site/scss/styles.scss */
+  /* line 285, ../../Responsive-site/scss/styles.scss */
   .hero img {
     display: flex;
     flex: 1;
@@ -201,53 +262,53 @@ header {
     width: 80%;
     border-radius: 20px; }
     @media (min-width: 1000px) {
-      /* line 208, ../../Responsive-site/scss/styles.scss */
+      /* line 285, ../../Responsive-site/scss/styles.scss */
       .hero img {
         width: 50%;
         order: 2; } }
 
-/* line 225, ../../Responsive-site/scss/styles.scss */
+/* line 302, ../../Responsive-site/scss/styles.scss */
 .about img {
   width: 60%; }
   @media (min-width: 900px) {
-    /* line 225, ../../Responsive-site/scss/styles.scss */
+    /* line 302, ../../Responsive-site/scss/styles.scss */
     .about img {
       width: 100%; } }
 
-/* line 232, ../../Responsive-site/scss/styles.scss */
+/* line 309, ../../Responsive-site/scss/styles.scss */
 .about h2 {
   text-align: center; }
 
-/* line 236, ../../Responsive-site/scss/styles.scss */
+/* line 313, ../../Responsive-site/scss/styles.scss */
 .about p {
   line-height: 1.7; }
 
-/* line 240, ../../Responsive-site/scss/styles.scss */
+/* line 317, ../../Responsive-site/scss/styles.scss */
 .about .flex-row {
   gap: 50px;
   flex-direction: column; }
   @media (min-width: 900px) {
-    /* line 240, ../../Responsive-site/scss/styles.scss */
+    /* line 317, ../../Responsive-site/scss/styles.scss */
     .about .flex-row {
       flex-direction: row; } }
 
-/* line 248, ../../Responsive-site/scss/styles.scss */
+/* line 325, ../../Responsive-site/scss/styles.scss */
 .about .left,
 .about .right {
   flex: 1; }
 
-/* line 254, ../../Responsive-site/scss/styles.scss */
+/* line 331, ../../Responsive-site/scss/styles.scss */
 .about .left .flex-row {
   gap: 0;
   flex-direction: column;
   margin-top: 32px;
   align-items: center; }
   @media (min-width: 500px) {
-    /* line 254, ../../Responsive-site/scss/styles.scss */
+    /* line 331, ../../Responsive-site/scss/styles.scss */
     .about .left .flex-row {
       flex-direction: row; } }
 
-/* line 264, ../../Responsive-site/scss/styles.scss */
+/* line 341, ../../Responsive-site/scss/styles.scss */
 .about .left .info {
   display: flex;
   flex: 1;
@@ -255,16 +316,16 @@ header {
   align-items: center;
   margin-top: 20px; }
   @media (min-width: 500px) {
-    /* line 264, ../../Responsive-site/scss/styles.scss */
+    /* line 341, ../../Responsive-site/scss/styles.scss */
     .about .left .info {
       margin-top: 0;
       align-items: initial; } }
-  /* line 275, ../../Responsive-site/scss/styles.scss */
+  /* line 352, ../../Responsive-site/scss/styles.scss */
   .about .left .info p {
     color: #444;
     font-size: 14px; }
 
-/* line 281, ../../Responsive-site/scss/styles.scss */
+/* line 358, ../../Responsive-site/scss/styles.scss */
 .about .left i {
   display: flex;
   align-items: center;
@@ -277,68 +338,68 @@ header {
   color: #007bff;
   font-size: 24px; }
   @media (min-width: 500px) {
-    /* line 281, ../../Responsive-site/scss/styles.scss */
+    /* line 358, ../../Responsive-site/scss/styles.scss */
     .about .left i {
       margin-right: 16px; } }
-  /* line 296, ../../Responsive-site/scss/styles.scss */
+  /* line 373, ../../Responsive-site/scss/styles.scss */
   .about .left i:hover {
     background-color: #007bff;
     border-color: transparent;
     color: #fff; }
 
-/* line 305, ../../Responsive-site/scss/styles.scss */
+/* line 382, ../../Responsive-site/scss/styles.scss */
 .about-1 {
   text-align: center; }
   @media (min-width: 500px) {
-    /* line 305, ../../Responsive-site/scss/styles.scss */
+    /* line 382, ../../Responsive-site/scss/styles.scss */
     .about-1 {
       text-align: initial; } }
 
-/* line 314, ../../Responsive-site/scss/styles.scss */
+/* line 391, ../../Responsive-site/scss/styles.scss */
 .about-1 .right,
 .about-3 .right {
   display: flex;
   justify-content: center; }
   @media (min-width: 900px) {
-    /* line 314, ../../Responsive-site/scss/styles.scss */
+    /* line 391, ../../Responsive-site/scss/styles.scss */
     .about-1 .right,
     .about-3 .right {
       align-items: start; } }
 
-/* line 324, ../../Responsive-site/scss/styles.scss */
+/* line 401, ../../Responsive-site/scss/styles.scss */
 .about-2 .left {
   order: 2;
   display: flex;
   justify-content: center; }
   @media (min-width: 900px) {
-    /* line 324, ../../Responsive-site/scss/styles.scss */
+    /* line 401, ../../Responsive-site/scss/styles.scss */
     .about-2 .left {
       order: 1;
       align-items: start; } }
 
-/* line 334, ../../Responsive-site/scss/styles.scss */
+/* line 411, ../../Responsive-site/scss/styles.scss */
 .about-2 .right {
   order: 1; }
   @media (min-width: 900px) {
-    /* line 334, ../../Responsive-site/scss/styles.scss */
+    /* line 411, ../../Responsive-site/scss/styles.scss */
     .about-2 .right {
       order: 2; } }
 
-/* line 344, ../../Responsive-site/scss/styles.scss */
+/* line 421, ../../Responsive-site/scss/styles.scss */
 .about-2 p,
 .about-3 p {
   margin-bottom: 20px; }
 
-/* line 351, ../../Responsive-site/scss/styles.scss */
+/* line 428, ../../Responsive-site/scss/styles.scss */
 .services {
   background-color: #ecf5ff; }
-  /* line 354, ../../Responsive-site/scss/styles.scss */
+  /* line 431, ../../Responsive-site/scss/styles.scss */
   .services .container {
     max-width: 900px; }
-  /* line 358, ../../Responsive-site/scss/styles.scss */
+  /* line 435, ../../Responsive-site/scss/styles.scss */
   .services h2 {
     text-align: center; }
-  /* line 362, ../../Responsive-site/scss/styles.scss */
+  /* line 439, ../../Responsive-site/scss/styles.scss */
   .services .grid {
     max-width: 600px;
     margin: 0 auto;
@@ -346,11 +407,11 @@ header {
     gap: 32px;
     row-gap: 50px; }
     @media (min-width: 800px) {
-      /* line 362, ../../Responsive-site/scss/styles.scss */
+      /* line 439, ../../Responsive-site/scss/styles.scss */
       .services .grid {
         grid-template-columns: repeat(2, 1fr);
         max-width: 100%; } }
-  /* line 374, ../../Responsive-site/scss/styles.scss */
+  /* line 451, ../../Responsive-site/scss/styles.scss */
   .services .flex-row {
     cursor: pointer;
     box-shadow: 0 10px 29px rgba(68, 88, 144, 0.1);
@@ -360,50 +421,50 @@ header {
     padding: 30px;
     background-color: #fff;
     transition: 500ms ease all; }
-    /* line 384, ../../Responsive-site/scss/styles.scss */
+    /* line 461, ../../Responsive-site/scss/styles.scss */
     .services .flex-row:hover {
       transform: translateY(-4px); }
-    /* line 388, ../../Responsive-site/scss/styles.scss */
+    /* line 465, ../../Responsive-site/scss/styles.scss */
     .services .flex-row h3 {
       font-size: 18px; }
-    /* line 392, ../../Responsive-site/scss/styles.scss */
+    /* line 469, ../../Responsive-site/scss/styles.scss */
     .services .flex-row p {
       font-size: 14px;
       line-height: 1.7; }
-    /* line 397, ../../Responsive-site/scss/styles.scss */
+    /* line 474, ../../Responsive-site/scss/styles.scss */
     .services .flex-row i {
       font-size: 64px;
       position: absolute;
       left: -10px;
       display: flex;
       align-self: center; }
-    /* line 405, ../../Responsive-site/scss/styles.scss */
+    /* line 482, ../../Responsive-site/scss/styles.scss */
     .services .flex-row .right {
       margin-left: 40px; }
 
-/* line 413, ../../Responsive-site/scss/styles.scss */
+/* line 490, ../../Responsive-site/scss/styles.scss */
 .why {
   background: #004a99;
   color: #fff; }
-  /* line 417, ../../Responsive-site/scss/styles.scss */
+  /* line 494, ../../Responsive-site/scss/styles.scss */
   .why h2, .why h3 {
     color: #fff;
     text-align: center; }
-  /* line 422, ../../Responsive-site/scss/styles.scss */
+  /* line 499, ../../Responsive-site/scss/styles.scss */
   .why .flex-row {
     margin-top: 60px;
     gap: 60px; }
-  /* line 427, ../../Responsive-site/scss/styles.scss */
+  /* line 504, ../../Responsive-site/scss/styles.scss */
   .why .write-up {
     margin: 0 auto;
     max-width: 600px;
     flex-direction: column; }
     @media (min-width: 700px) {
-      /* line 427, ../../Responsive-site/scss/styles.scss */
+      /* line 504, ../../Responsive-site/scss/styles.scss */
       .why .write-up {
         max-width: 100%;
         flex-direction: row; } }
-    /* line 436, ../../Responsive-site/scss/styles.scss */
+    /* line 513, ../../Responsive-site/scss/styles.scss */
     .why .write-up .col {
       display: flex;
       flex-direction: column;
@@ -414,73 +475,73 @@ header {
       background-color: #00458f;
       text-align: center;
       transition: 500ms ease all; }
-      /* line 447, ../../Responsive-site/scss/styles.scss */
+      /* line 524, ../../Responsive-site/scss/styles.scss */
       .why .write-up .col:hover {
         background-color: #003b7a; }
-        /* line 450, ../../Responsive-site/scss/styles.scss */
+        /* line 527, ../../Responsive-site/scss/styles.scss */
         .why .write-up .col:hover span {
           border-color: #004a99; }
-    /* line 456, ../../Responsive-site/scss/styles.scss */
+    /* line 533, ../../Responsive-site/scss/styles.scss */
     .why .write-up span {
       max-width: 100%;
       margin-top: auto;
       padding-bottom: 4px;
       border-bottom: 2px solid transparent;
       margin: 0 auto; }
-    /* line 464, ../../Responsive-site/scss/styles.scss */
+    /* line 541, ../../Responsive-site/scss/styles.scss */
     .why .write-up i {
       font-size: 50px; }
-    /* line 468, ../../Responsive-site/scss/styles.scss */
+    /* line 545, ../../Responsive-site/scss/styles.scss */
     .why .write-up h3 {
       margin: 16px 0; }
-    /* line 472, ../../Responsive-site/scss/styles.scss */
+    /* line 549, ../../Responsive-site/scss/styles.scss */
     .why .write-up p {
       font-size: 14px;
       margin-bottom: 32px; }
-  /* line 478, ../../Responsive-site/scss/styles.scss */
+  /* line 555, ../../Responsive-site/scss/styles.scss */
   .why .analytics {
     flex-direction: column;
     margin-top: 90px;
     justify-content: space-evenly; }
     @media (min-width: 700px) {
-      /* line 478, ../../Responsive-site/scss/styles.scss */
+      /* line 555, ../../Responsive-site/scss/styles.scss */
       .why .analytics {
         flex-direction: row; } }
-    /* line 486, ../../Responsive-site/scss/styles.scss */
+    /* line 563, ../../Responsive-site/scss/styles.scss */
     .why .analytics span {
       display: block;
       text-align: center; }
-    /* line 491, ../../Responsive-site/scss/styles.scss */
+    /* line 568, ../../Responsive-site/scss/styles.scss */
     .why .analytics .number {
       font-size: 50px;
       font-weight: 600;
       margin-bottom: 10px; }
-    /* line 497, ../../Responsive-site/scss/styles.scss */
+    /* line 574, ../../Responsive-site/scss/styles.scss */
     .why .analytics .title {
       font-size: 14px; }
 
-/* line 507, ../../Responsive-site/scss/styles.scss */
+/* line 584, ../../Responsive-site/scss/styles.scss */
 .photo-gallery h2 {
   text-align: center; }
 
-/* line 511, ../../Responsive-site/scss/styles.scss */
+/* line 588, ../../Responsive-site/scss/styles.scss */
 .photo-gallery .grid {
   grid-template-columns: 1fr;
   grid-auto-rows: 125px;
   gap: 16px; }
   @media (min-width: 600px) {
-    /* line 511, ../../Responsive-site/scss/styles.scss */
+    /* line 588, ../../Responsive-site/scss/styles.scss */
     .photo-gallery .grid {
       grid-template-columns: repeat(2, 1fr); } }
   @media (min-width: 900px) {
-    /* line 511, ../../Responsive-site/scss/styles.scss */
+    /* line 588, ../../Responsive-site/scss/styles.scss */
     .photo-gallery .grid {
       grid-template-columns: repeat(3, 1fr); } }
 
-/* line 523, ../../Responsive-site/scss/styles.scss */
+/* line 600, ../../Responsive-site/scss/styles.scss */
 .photo-gallery .col {
   position: relative; }
-  /* line 526, ../../Responsive-site/scss/styles.scss */
+  /* line 603, ../../Responsive-site/scss/styles.scss */
   .photo-gallery .col img {
     position: relative;
     object-fit: cover;
@@ -488,7 +549,7 @@ header {
     width: 100%;
     height: 100%;
     border-radius: 20px; }
-  /* line 535, ../../Responsive-site/scss/styles.scss */
+  /* line 612, ../../Responsive-site/scss/styles.scss */
   .photo-gallery .col .bg {
     border-radius: 12px;
     transition: 500ms ease all;
@@ -496,7 +557,7 @@ header {
     top: 0;
     width: 100%;
     height: 100%; }
-  /* line 544, ../../Responsive-site/scss/styles.scss */
+  /* line 621, ../../Responsive-site/scss/styles.scss */
   .photo-gallery .col .content {
     color: #fff;
     display: flex;
@@ -509,37 +570,37 @@ header {
     top: 0;
     width: 100%;
     height: 100%; }
-    /* line 557, ../../Responsive-site/scss/styles.scss */
+    /* line 634, ../../Responsive-site/scss/styles.scss */
     .photo-gallery .col .content p:nth-child(1) {
       font-weight: 600;
       font-size: 24px;
       margin-bottom: 4px; }
-    /* line 563, ../../Responsive-site/scss/styles.scss */
+    /* line 640, ../../Responsive-site/scss/styles.scss */
     .photo-gallery .col .content p:nth-child(2) {
       margin-bottom: 4px; }
-    /* line 567, ../../Responsive-site/scss/styles.scss */
+    /* line 644, ../../Responsive-site/scss/styles.scss */
     .photo-gallery .col .content i {
       cursor: pointer;
       font-size: 18px;
       padding: 10px;
       border-radius: 50%;
       background-color: #004289; }
-  /* line 576, ../../Responsive-site/scss/styles.scss */
+  /* line 653, ../../Responsive-site/scss/styles.scss */
   .photo-gallery .col:hover .bg {
     background-color: rgba(0, 59, 122, 0.7); }
-  /* line 579, ../../Responsive-site/scss/styles.scss */
+  /* line 656, ../../Responsive-site/scss/styles.scss */
   .photo-gallery .col:hover .content {
     opacity: 1; }
 
-/* line 585, ../../Responsive-site/scss/styles.scss */
+/* line 662, ../../Responsive-site/scss/styles.scss */
 .photo-gallery .photo-1 {
   grid-row: span 2; }
   @media (min-width: 600px) {
-    /* line 585, ../../Responsive-site/scss/styles.scss */
+    /* line 662, ../../Responsive-site/scss/styles.scss */
     .photo-gallery .photo-1 {
       grid-row: span 3; } }
 
-/* line 592, ../../Responsive-site/scss/styles.scss */
+/* line 669, ../../Responsive-site/scss/styles.scss */
 .photo-gallery .photo-2,
 .photo-gallery .photo-6,
 .photo-gallery .photo-7,
@@ -547,30 +608,30 @@ header {
 .photo-gallery .photo-9 {
   grid-row: span 2; }
 
-/* line 600, ../../Responsive-site/scss/styles.scss */
+/* line 677, ../../Responsive-site/scss/styles.scss */
 .photo-gallery .photo-3,
 .photo-gallery .photo-4,
 .photo-gallery .photo-5 {
   grid-row: span 2; }
   @media (min-width: 600px) {
-    /* line 600, ../../Responsive-site/scss/styles.scss */
+    /* line 677, ../../Responsive-site/scss/styles.scss */
     .photo-gallery .photo-3,
     .photo-gallery .photo-4,
     .photo-gallery .photo-5 {
       grid-row: span 5; } }
 
-/* line 612, ../../Responsive-site/scss/styles.scss */
+/* line 689, ../../Responsive-site/scss/styles.scss */
 .testimonials {
   background-color: #ecf5ff;
   box-shadow: inset 0 0 12px 0 rgba(0, 0, 0, 0.1); }
-  /* line 616, ../../Responsive-site/scss/styles.scss */
+  /* line 693, ../../Responsive-site/scss/styles.scss */
   .testimonials h2 {
     text-align: center; }
-  /* line 620, ../../Responsive-site/scss/styles.scss */
+  /* line 697, ../../Responsive-site/scss/styles.scss */
   .testimonials .owl-carousel {
     max-width: 800px;
     margin: 0 auto; }
-  /* line 625, ../../Responsive-site/scss/styles.scss */
+  /* line 702, ../../Responsive-site/scss/styles.scss */
   .testimonials img {
     width: 120px !important;
     height: 120px;
@@ -578,80 +639,80 @@ header {
     border-radius: 50%;
     margin: 0 0 20px 0; }
     @media (min-width: 600px) {
-      /* line 625, ../../Responsive-site/scss/styles.scss */
+      /* line 702, ../../Responsive-site/scss/styles.scss */
       .testimonials img {
         margin: 0 20px 0 0; } }
-  /* line 636, ../../Responsive-site/scss/styles.scss */
+  /* line 713, ../../Responsive-site/scss/styles.scss */
   .testimonials .flex-row {
     flex-direction: column;
     align-items: center;
     text-align: center; }
     @media (min-width: 600px) {
-      /* line 636, ../../Responsive-site/scss/styles.scss */
+      /* line 713, ../../Responsive-site/scss/styles.scss */
       .testimonials .flex-row {
         flex-direction: row;
         align-items: flex-start;
         text-align: start; } }
-    /* line 646, ../../Responsive-site/scss/styles.scss */
+    /* line 723, ../../Responsive-site/scss/styles.scss */
     .testimonials .flex-row h2 {
       font-size: 20px;
       color: #111;
       margin: 0 0 8px 0; }
       @media (min-width: 600px) {
-        /* line 646, ../../Responsive-site/scss/styles.scss */
+        /* line 723, ../../Responsive-site/scss/styles.scss */
         .testimonials .flex-row h2 {
           text-align: start; } }
-    /* line 655, ../../Responsive-site/scss/styles.scss */
+    /* line 732, ../../Responsive-site/scss/styles.scss */
     .testimonials .flex-row h4 {
       font-weight: 300;
       margin: 0 0 8px 0;
       color: #999;
       font-size: 14px; }
-    /* line 662, ../../Responsive-site/scss/styles.scss */
+    /* line 739, ../../Responsive-site/scss/styles.scss */
     .testimonials .flex-row p {
       font-family: sans-serif;
       font-weight: 400;
       font-style: italic;
       color: #444; }
 
-/* line 674, ../../Responsive-site/scss/styles.scss */
+/* line 751, ../../Responsive-site/scss/styles.scss */
 .team h2 {
   text-align: center; }
 
-/* line 678, ../../Responsive-site/scss/styles.scss */
+/* line 755, ../../Responsive-site/scss/styles.scss */
 .team .flex-row {
   gap: 32px;
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: row; }
 
-/* line 685, ../../Responsive-site/scss/styles.scss */
+/* line 762, ../../Responsive-site/scss/styles.scss */
 .team .col {
   position: relative;
   flex-basis: 80%; }
   @media (min-width: 600px) {
-    /* line 685, ../../Responsive-site/scss/styles.scss */
+    /* line 762, ../../Responsive-site/scss/styles.scss */
     .team .col {
       flex-basis: 43%; } }
   @media (min-width: 900px) {
-    /* line 685, ../../Responsive-site/scss/styles.scss */
+    /* line 762, ../../Responsive-site/scss/styles.scss */
     .team .col {
       flex-basis: 21%; } }
-  /* line 696, ../../Responsive-site/scss/styles.scss */
+  /* line 773, ../../Responsive-site/scss/styles.scss */
   .team .col:hover .bg {
     background-color: rgba(0, 123, 255, 0.5); }
-  /* line 700, ../../Responsive-site/scss/styles.scss */
+  /* line 777, ../../Responsive-site/scss/styles.scss */
   .team .col:hover .info {
     margin-top: 0;
     opacity: 1; }
 
-/* line 707, ../../Responsive-site/scss/styles.scss */
+/* line 784, ../../Responsive-site/scss/styles.scss */
 .team img {
   display: block;
   width: 100%;
   border-radius: 50%; }
 
-/* line 713, ../../Responsive-site/scss/styles.scss */
+/* line 790, ../../Responsive-site/scss/styles.scss */
 .team .bg {
   position: absolute;
   width: 100%;
@@ -660,7 +721,7 @@ header {
   border-radius: 50%;
   transition: 500ms ease all; }
 
-/* line 722, ../../Responsive-site/scss/styles.scss */
+/* line 799, ../../Responsive-site/scss/styles.scss */
 .team .info {
   display: flex;
   flex-direction: column;
@@ -674,26 +735,26 @@ header {
   width: 100%;
   height: 100%;
   opacity: 0; }
-  /* line 736, ../../Responsive-site/scss/styles.scss */
+  /* line 813, ../../Responsive-site/scss/styles.scss */
   .team .info p:nth-child(1) {
     margin-bottom: 8px;
     font-weight: 700; }
-  /* line 741, ../../Responsive-site/scss/styles.scss */
+  /* line 818, ../../Responsive-site/scss/styles.scss */
   .team .info p:nth-child(2) {
     font-size: 14px;
     font-style: italic; }
 
-/* line 750, ../../Responsive-site/scss/styles.scss */
+/* line 827, ../../Responsive-site/scss/styles.scss */
 .clients {
   background-color: #ecf5ff;
   box-shadow: inset 0 0 12px 0 rgba(0, 0, 0, 0.1); }
-  /* line 754, ../../Responsive-site/scss/styles.scss */
+  /* line 831, ../../Responsive-site/scss/styles.scss */
   .clients h2 {
     text-align: center; }
-  /* line 758, ../../Responsive-site/scss/styles.scss */
+  /* line 835, ../../Responsive-site/scss/styles.scss */
   .clients .flex-row {
     flex-wrap: wrap; }
-  /* line 762, ../../Responsive-site/scss/styles.scss */
+  /* line 839, ../../Responsive-site/scss/styles.scss */
   .clients .col {
     max-height: 180px;
     display: flex;
@@ -707,157 +768,157 @@ header {
     flex-basis: 100%;
     padding: 64px; }
     @media (min-width: 500px) {
-      /* line 762, ../../Responsive-site/scss/styles.scss */
+      /* line 839, ../../Responsive-site/scss/styles.scss */
       .clients .col {
         border-left: none;
         flex-basis: 50%; } }
     @media (min-width: 900px) {
-      /* line 762, ../../Responsive-site/scss/styles.scss */
+      /* line 839, ../../Responsive-site/scss/styles.scss */
       .clients .col {
         flex-basis: 25%; } }
-    /* line 783, ../../Responsive-site/scss/styles.scss */
+    /* line 860, ../../Responsive-site/scss/styles.scss */
     .clients .col:hover img {
       transform: scale(1.2); }
-    /* line 788, ../../Responsive-site/scss/styles.scss */
+    /* line 865, ../../Responsive-site/scss/styles.scss */
     .clients .col img {
       max-width: 100%;
       height: auto;
       transition: 500ms ease all; }
-  /* line 795, ../../Responsive-site/scss/styles.scss */
+  /* line 872, ../../Responsive-site/scss/styles.scss */
   .clients .col:nth-child(1) {
     border-top: 1px solid #d6eaff; }
   @media (min-width: 500px) {
-    /* line 799, ../../Responsive-site/scss/styles.scss */
+    /* line 876, ../../Responsive-site/scss/styles.scss */
     .clients .col:nth-child(2) {
       border-top: 1px solid #d6eaff; } }
   @media (min-width: 500px) {
-    /* line 805, ../../Responsive-site/scss/styles.scss */
+    /* line 882, ../../Responsive-site/scss/styles.scss */
     .clients .col:nth-child(odd) {
       border-left: 1px solid #d6eaff; } }
   @media (min-width: 900px) {
-    /* line 805, ../../Responsive-site/scss/styles.scss */
+    /* line 882, ../../Responsive-site/scss/styles.scss */
     .clients .col:nth-child(odd) {
       border-left: none; } }
   @media (min-width: 900px) {
-    /* line 814, ../../Responsive-site/scss/styles.scss */
+    /* line 891, ../../Responsive-site/scss/styles.scss */
     .clients .col:nth-child(3),
     .clients .col:nth-child(4) {
       border-top: 1px solid #d6eaff; } }
   @media (min-width: 900px) {
-    /* line 821, ../../Responsive-site/scss/styles.scss */
+    /* line 898, ../../Responsive-site/scss/styles.scss */
     .clients .col:nth-child(1),
     .clients .col:nth-child(5) {
       border-left: 1px solid #d6eaff; } }
 
-/* line 831, ../../Responsive-site/scss/styles.scss */
+/* line 908, ../../Responsive-site/scss/styles.scss */
 footer {
   color: #fff;
   background-color: #004a99; }
-  /* line 835, ../../Responsive-site/scss/styles.scss */
+  /* line 912, ../../Responsive-site/scss/styles.scss */
   footer .container {
     display: flex;
     flex-direction: column;
     align-items: center; }
-  /* line 841, ../../Responsive-site/scss/styles.scss */
+  /* line 918, ../../Responsive-site/scss/styles.scss */
   footer ul {
     margin-bottom: 32px;
     flex-wrap: wrap;
     justify-content: center; }
-  /* line 847, ../../Responsive-site/scss/styles.scss */
+  /* line 924, ../../Responsive-site/scss/styles.scss */
   footer li {
     padding: 0 15px;
     margin-bottom: 16px; }
-  /* line 852, ../../Responsive-site/scss/styles.scss */
+  /* line 929, ../../Responsive-site/scss/styles.scss */
   footer a {
     font-size: 14px;
     font-weight: 500;
     color: #fff; }
-  /* line 858, ../../Responsive-site/scss/styles.scss */
+  /* line 935, ../../Responsive-site/scss/styles.scss */
   footer i {
     cursor: pointer;
     font-size: 30px; }
-  /* line 863, ../../Responsive-site/scss/styles.scss */
+  /* line 940, ../../Responsive-site/scss/styles.scss */
   footer p {
     text-align: center; }
 
-/* line 870, ../../Responsive-site/scss/styles.scss */
+/* line 947, ../../Responsive-site/scss/styles.scss */
 .contact-us h2,
 .contact-us p {
   text-align: center; }
 
-/* line 875, ../../Responsive-site/scss/styles.scss */
+/* line 952, ../../Responsive-site/scss/styles.scss */
 .contact-us p {
   margin-bottom: 16px; }
 
-/* line 879, ../../Responsive-site/scss/styles.scss */
+/* line 956, ../../Responsive-site/scss/styles.scss */
 .contact-us input,
 .contact-us button {
   display: block; }
 
-/* line 884, ../../Responsive-site/scss/styles.scss */
+/* line 961, ../../Responsive-site/scss/styles.scss */
 .contact-us input,
 .contact-us textarea {
   width: 100%;
   padding: 8px;
   border: 1px solid #ced4da; }
-  /* line 890, ../../Responsive-site/scss/styles.scss */
+  /* line 967, ../../Responsive-site/scss/styles.scss */
   .contact-us input:focus,
   .contact-us textarea:focus {
     outline: none; }
 
-/* line 895, ../../Responsive-site/scss/styles.scss */
+/* line 972, ../../Responsive-site/scss/styles.scss */
 .contact-us input {
   margin-bottom: 16px; }
 
-/* line 899, ../../Responsive-site/scss/styles.scss */
+/* line 976, ../../Responsive-site/scss/styles.scss */
 .contact-us textarea {
   height: 100%;
   resize: none; }
 
-/* line 904, ../../Responsive-site/scss/styles.scss */
+/* line 981, ../../Responsive-site/scss/styles.scss */
 .contact-us form {
   max-width: 700px;
   margin: 0 auto; }
 
-/* line 909, ../../Responsive-site/scss/styles.scss */
+/* line 986, ../../Responsive-site/scss/styles.scss */
 .contact-us .flex-row {
   flex-direction: column; }
   @media (min-width: 500px) {
-    /* line 909, ../../Responsive-site/scss/styles.scss */
+    /* line 986, ../../Responsive-site/scss/styles.scss */
     .contact-us .flex-row {
       flex-direction: row;
       gap: 32px; } }
 
-/* line 917, ../../Responsive-site/scss/styles.scss */
+/* line 994, ../../Responsive-site/scss/styles.scss */
 .contact-us .btn {
   margin-top: 16px;
   font-weight: 400; }
-  /* line 921, ../../Responsive-site/scss/styles.scss */
+  /* line 998, ../../Responsive-site/scss/styles.scss */
   .contact-us .btn:hover {
     color: #007bff;
     border-color: #007bff; }
 
-/* line 930, ../../Responsive-site/scss/styles.scss */
+/* line 1007, ../../Responsive-site/scss/styles.scss */
 .container {
   max-width: 1140px;
   margin: 0 auto; }
 
-/* line 935, ../../Responsive-site/scss/styles.scss */
+/* line 1012, ../../Responsive-site/scss/styles.scss */
 .display-none {
   display: none; }
 
-/* line 939, ../../Responsive-site/scss/styles.scss */
+/* line 1016, ../../Responsive-site/scss/styles.scss */
 .flex-row {
   display: flex; }
-  /* line 942, ../../Responsive-site/scss/styles.scss */
+  /* line 1019, ../../Responsive-site/scss/styles.scss */
   .flex-row img {
     max-width: 600px; }
 
-/* line 947, ../../Responsive-site/scss/styles.scss */
+/* line 1024, ../../Responsive-site/scss/styles.scss */
 .grid {
   display: grid; }
 
-/* line 951, ../../Responsive-site/scss/styles.scss */
+/* line 1028, ../../Responsive-site/scss/styles.scss */
 .btn {
   cursor: pointer;
   display: inline-block;
@@ -868,41 +929,41 @@ footer {
   border: 2px solid transparent;
   font-weight: 600;
   transition: 500ms ease all; }
-  /* line 962, ../../Responsive-site/scss/styles.scss */
+  /* line 1039, ../../Responsive-site/scss/styles.scss */
   .btn:hover {
     background-color: transparent;
     border-color: #fff; }
 
-/* line 968, ../../Responsive-site/scss/styles.scss */
+/* line 1045, ../../Responsive-site/scss/styles.scss */
 .btn-light {
   background-color: transparent;
   border-color: #fff; }
-  /* line 972, ../../Responsive-site/scss/styles.scss */
+  /* line 1049, ../../Responsive-site/scss/styles.scss */
   .btn-light:hover {
     background-color: #007bff;
     border-color: transparent; }
 
-/* line 978, ../../Responsive-site/scss/styles.scss */
+/* line 1055, ../../Responsive-site/scss/styles.scss */
 .pink-text {
   color: #ff689b; }
 
-/* line 982, ../../Responsive-site/scss/styles.scss */
+/* line 1059, ../../Responsive-site/scss/styles.scss */
 .yellow-text {
   color: #e9bf06; }
 
-/* line 986, ../../Responsive-site/scss/styles.scss */
+/* line 1063, ../../Responsive-site/scss/styles.scss */
 .teal-text {
   color: #3fcdc7; }
 
-/* line 990, ../../Responsive-site/scss/styles.scss */
+/* line 1067, ../../Responsive-site/scss/styles.scss */
 .green-text {
   color: #41cf2e; }
 
-/* line 994, ../../Responsive-site/scss/styles.scss */
+/* line 1071, ../../Responsive-site/scss/styles.scss */
 .lineGreen-text {
   color: #d6ff22; }
 
-/* line 998, ../../Responsive-site/scss/styles.scss */
+/* line 1075, ../../Responsive-site/scss/styles.scss */
 .blue-text {
   color: #4680ff; }
 
